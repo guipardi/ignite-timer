@@ -1,17 +1,17 @@
-import reactLogo from './assets/react.svg'
+import { ThemeProvider } from 'styled-components'
 import { Button } from './Button/Button'
-import viteLogo from '/vite.svg'
+import { defaultTheme } from './styles/theme/default'
 
 function App() {
 
   return (
-      <>
-        <Button variant='primary' />
-        <Button variant='secondary' />
-        <Button variant='danger' />
-        <Button variant='success' />
-        <Button />
-      </>
+      <ThemeProvider theme={defaultTheme}>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+        <Button/>
+      </ThemeProvider>
   )
 }
 
