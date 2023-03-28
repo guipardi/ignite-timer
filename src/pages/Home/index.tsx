@@ -20,6 +20,7 @@ const newCycleValidationSchema = zod.object({
 })
 
 type newCycleFormData = zod.infer<typeof newCycleValidationSchema>
+/* Inferindo o tipo pelo zod(biblioteca de validação. Mas poderia criar uma interface normal) */
 
 export function Home() {
   const { register, handleSubmit, watch } = useForm<newCycleFormData>({
